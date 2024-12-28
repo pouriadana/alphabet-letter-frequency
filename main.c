@@ -27,6 +27,10 @@ int main()
     // }
     // printf("\n%d\n", findmax(freq, ALEPH));
     // End Debug
+    for (int i = 0; i < ALEPH; ++i) {
+        printf("%c  ", 'A' + i);
+    }
+    putchar('\n');
 
     int limiter, max;
 
