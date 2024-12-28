@@ -4,7 +4,7 @@
 
 int main()
 {
-    char freq[ALEPH];
+    int freq[ALEPH];
     int c;
 
     for (int i = 0; i < ALEPH; ++i) {
