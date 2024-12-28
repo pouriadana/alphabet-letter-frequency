@@ -27,6 +27,23 @@ int main()
     // }
     // printf("\n%d\n", findmax(freq, ALEPH));
     // End Debug
+
+    int limiter, max;
+
+    limiter = 1;
+    max = findmax(freq, ALEPH);
+    for (int i = 0; i < max; ++i) {
+        for (int j = 0; j < ALEPH; ++j) {
+            if (freq[j] >= limiter) {
+            printf("#  ");
+            }
+            else {
+                printf("   ");
+            }
+        }
+        ++limiter;
+        putchar('\n');
+    }
 }
 
 int findmax(int freq[], int len)
